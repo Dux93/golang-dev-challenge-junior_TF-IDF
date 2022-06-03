@@ -27,9 +27,8 @@ func print_doc(url string) {
 	}
 }
 
-func wordAllDocument(url string) []string
-{
-  var word words string
+func wordAllDocument(url string) string{
+  var word, words string
    file, mistake := os.Open(url)
     defer file.Close()
 	if mistake != nil {
